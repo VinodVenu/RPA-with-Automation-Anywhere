@@ -1,0 +1,15 @@
+Extract PDF data to Excel, encypt it then send via email
+--------------------------------------------------------
+
+This Bot is to extract the data from the PDF and those fields will be saved in the 
+excel. This excel is then encryptrd and send via email
+
+Logic
+-----
+1) The credentials are stored in local excel sheet, so retrieving the username and password
+   and storing them in the local variables
+2) Extracting the data from the PDF and storing those fields in the variables
+3) Opening the excel sheet and entering the extracted fields in the excel cells
+4) Encrypting the excel file after closing it
+5) Sending to user via email
+
