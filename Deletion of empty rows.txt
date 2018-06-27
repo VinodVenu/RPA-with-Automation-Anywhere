@@ -1,0 +1,16 @@
+Deletion of empty rows
+----------------------
+
+There are many cases where the Key will be empty in the excel sheet, this bot is designed to
+delete those rows.
+
+Approach: Down to top
+Why: If we delete the rows from top to bottom, there is a chance of infinite loop as well as if we delete a row,
+the total number of rows which has data will change, thus loop will not be correct
+
+Explanation: 
+1) Program will prompt for the file path, if we choose yes, it will proceed with default excel. 
+   If we want to give a excel path, choose No and provide the path
+2) Bot will open the excel and if not able to find the excel it throw the warning message
+3) Bot will check whether any of the row is empty using the down to top loop, if found it will delete the row
+4) Closes the  excel sheet
