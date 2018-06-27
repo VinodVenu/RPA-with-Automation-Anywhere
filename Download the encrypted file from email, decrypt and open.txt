@@ -1,0 +1,16 @@
+Download the encrypted file, decrypt it and open
+------------------------------------------------
+
+This bot will download the attachment from the email, decrypt it and then open the file
+
+
+Logic
+-----
+1) The credentials are stored in local excel sheet, so retrieving the username and password
+   and storing them in the local variables
+2) Looping through all the email and downloading all the attachment
+3) If the desired email subject is obtained exiting the loop
+4) Copying only the desired attachment
+5) Deleting all the other irrelavent attachmment from the download folder
+6) Decrypting the file using the same key used for encrypting
+7) Opening the decrypted file
